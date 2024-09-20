@@ -34,16 +34,6 @@ Dari kode di atas terdapat dua attributes yang harus kita gunakan ketika menerap
 
 Berikut adalah jenis format gambar yang umum digunakan pada pembuatan website.
 
-| **No** | **Format** | **Keterangan** |
-|--------------------------------------|
-| 1 | Graphics Interchange Format (.gif) |    - Dapat digunakan untuk gambar animasi.
-   - Ukuran file biasanya kecil.
-   - Kualitas gambar terbatas. |
-|--------------------------------------|
-| 2 | Joint Photographic Expert Group image (.jpg, .jpeg, .jfif, .pjpeg, .pjp) | - Kualitas teks pada gambar dapat menjadi buruk.
-   - Ukuran file lumayan kecil.
-   - Pada website biasanya digunakan untuk gambar yang tidak banyak teks. |
-
 1. Graphics Interchange Format (.gif)
    - Dapat digunakan untuk gambar animasi.
    - Ukuran file biasanya kecil.
@@ -152,7 +142,7 @@ Dalam elemen figure, kita dapat menuliskan elemen `<figcaption>` sebagai sebuah 
 <p>
   Dicoding adalah sebuah perusahaan startup ...
 </p>
-
+<br>
 <figure>
   <img
     src="https://raw.githubusercontent.com/dicodingacademy/a123-webdasar-labs/099-shared-files/shared-media/g-dicoding-logo.png"
@@ -161,10 +151,11 @@ Dalam elemen figure, kita dapat menuliskan elemen `<figcaption>` sebagai sebuah 
   />
   <figcaption>Dicoding</figcaption>
 </figure>
-
+<br>
 <p>
   Materi perdana yang menjadi ...
 </p>
+
 ---
 
 ```
@@ -186,7 +177,7 @@ Dalam elemen figure, kita dapat menuliskan elemen `<figcaption>` sebagai sebuah 
 </p>
 ```
 
-Contoh lainnya, elemen figure dapat digunakan untuk me-*markup* sebuah konten puisi.
+Contoh lainnya, elemen figure dapat digunakan untuk me-_markup_ sebuah konten puisi.
 
 <figure>
   <pre>
