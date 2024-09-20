@@ -60,3 +60,13 @@ Jika memiliki sebuah kutipan ataupun sebuah testimonial, dapat gunakan format lo
     perorangan, kelompok, atau organisasi.
   </p>
 </blockquote>
+
+```
+<blockquote>
+  <p>
+    Situs web (bahasa Inggris: website) adalah sekumpulan halaman web yang saling berhubungan yang
+    umumnya berada pada peladen yang sama berisikan kumpulan informasi yang disediakan secara
+    perorangan, kelompok, atau organisasi.
+  </p>
+</blockquote>
+```
