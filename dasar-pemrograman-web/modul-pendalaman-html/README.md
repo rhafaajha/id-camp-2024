@@ -18,7 +18,11 @@ Pada HTML untuk menampilkan sebuah gambar kita bisa menggunakan tag `<img>`. Ber
 <img src="https://raw.githubusercontent.com/dicodingacademy/a123-webdasar-labs/099-shared-files/shared-media/dicoding-logo.jpg" alt="Dicoding Logo" width="250" />
 
 ```
-<img src="https://raw.githubusercontent.com/dicodingacademy/a123-webdasar-labs/099-shared-files/shared-media/dicoding-logo.jpg" alt="Dicoding Logo" width="250" />
+<img
+    src="https://raw.githubusercontent.com/dicodingacademy/a123-webdasar-labs/099-shared-files/shared-media/dicoding-logo.jpg"
+    alt="Dicoding Logo"
+    width="250"
+/>
 ```
 
 Dari kode di atas terdapat dua attributes yang harus kita gunakan ketika menerapkan elemen `<img>`.
