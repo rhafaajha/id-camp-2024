@@ -2,14 +2,14 @@
 
 Pada HTML terdapat tiga tipe list.
 
-1. Unordered lists: daftar yang ditampilkan tidak memiliki urutan. Penulisan menggunakan tag `<ul><li> ... </li></ul>`.
-2. Ordered lists: daftar yang ditampilkan secara terurut. Penulisan menggunakan tag `<ol><li> ... </li></ol>`. Berikut adalah nilai-nilai yang dapat digunakan pada atribut type pada elemen `<ol>`.
+1. **Unordered lists**: daftar yang ditampilkan tidak memiliki urutan. Penulisan menggunakan tag `<ul><li> ... </li></ul>`.
+2. **Ordered lists**: daftar yang ditampilkan secara terurut. Penulisan menggunakan tag `<ol><li> ... </li></ol>`. Berikut adalah nilai-nilai yang dapat digunakan pada atribut type pada elemen `<ol>`.
    a. `1` : Menggunakan angka dalam urutan item (default).
    b. `a` : Menggunakan huruf kecil dalam urutan item.
    c. `A` : Menggunakan huruf besar dalam urutan item.
    d. `i` : Menggunakan huruf romawi kecil dalam urutan item.
    e. `I` : Menggunakan huruf romawi besar dalam urutan item.
-3. Description lists: daftar yang terbuat dari beberapa istilah diikuti dengan deskripsi dari istilah tersebut.
+3. **Description lists**: daftar yang terbuat dari beberapa istilah diikuti dengan deskripsi dari istilah tersebut.
 
 # Gambar
 
@@ -27,12 +27,22 @@ Pada HTML untuk menampilkan sebuah gambar kita bisa menggunakan tag `<img>`. Ber
 
 Dari kode di atas terdapat dua attributes yang harus kita gunakan ketika menerapkan elemen `<img>`.
 
-1. `src` : Atribut ini berfungsi sebagai sumber dari gambar yang ditampilkan. Atribut ini dapat bernilai url gambar atau path gambar local dari gambar yang digunakan.
-2. `alt` : Atribut ini sebenarnya tidak wajib untuk diterapkan, hanya saja atribut ini akan sangat berguna ketika gambar tidak berhasil ditampilkan. Nilai atribut ini merupakan tampilan dari gambar yang ditampilkan dalam bentuk tulisan. Jadi, ketika gambar gagal ditampilkan akan memunculkan teks alternatif yang dapat mewakili arti dari gambar tersebut.
+1. **`src`** : Atribut ini berfungsi sebagai sumber dari gambar yang ditampilkan. Atribut ini dapat bernilai url gambar atau path gambar local dari gambar yang digunakan.
+2. **`alt`** : Atribut ini sebenarnya tidak wajib untuk diterapkan, hanya saja atribut ini akan sangat berguna ketika gambar tidak berhasil ditampilkan. Nilai atribut ini merupakan tampilan dari gambar yang ditampilkan dalam bentuk tulisan. Jadi, ketika gambar gagal ditampilkan akan memunculkan teks alternatif yang dapat mewakili arti dari gambar tersebut.
 
 ### Jenis Format Gambar
 
 Berikut adalah jenis format gambar yang umum digunakan pada pembuatan website.
+
+| **No** | **Format** | **Keterangan** |
+|--------------------------------------|
+| 1 | Graphics Interchange Format (.gif) |    - Dapat digunakan untuk gambar animasi.
+   - Ukuran file biasanya kecil.
+   - Kualitas gambar terbatas. |
+|--------------------------------------|
+| 2 | Joint Photographic Expert Group image (.jpg, .jpeg, .jfif, .pjpeg, .pjp) | - Kualitas teks pada gambar dapat menjadi buruk.
+   - Ukuran file lumayan kecil.
+   - Pada website biasanya digunakan untuk gambar yang tidak banyak teks. |
 
 1. Graphics Interchange Format (.gif)
    - Dapat digunakan untuk gambar animasi.
@@ -101,7 +111,7 @@ Menarik menari seluruh aku
 Hidup dari hidupku, pintu terbuka
 Selama matamu bagiku menengadah
 Selama kau darah mengalir dari luka
-Antara kita Mati datang tidak membelah...
+Antara kita Mati datang tidak membelah
 
                   Karya: Chairil Anwar
 </pre>
@@ -123,7 +133,7 @@ Menarik menari seluruh aku
 Hidup dari hidupku, pintu terbuka
 Selama matamu bagiku menengadah
 Selama kau darah mengalir dari luka
-Antara kita Mati datang tidak membelah...
+Antara kita Mati datang tidak membelah
 
                   Karya: Chairil Anwar
 </pre>
@@ -137,6 +147,8 @@ Elemen ini digunakan untuk mengelompokkan blok konten yang dapat dipindahkan pos
 
 Dalam elemen figure, kita dapat menuliskan elemen `<figcaption>` sebagai sebuah caption (judul) untuk konten tersebut. Berikut adalah contoh penggunaan figure pada sebuah konten gambar.
 
+---
+
 <p>
   Dicoding adalah sebuah perusahaan startup ...
 </p>
@@ -153,6 +165,7 @@ Dalam elemen figure, kita dapat menuliskan elemen `<figcaption>` sebagai sebuah 
 <p>
   Materi perdana yang menjadi ...
 </p>
+---
 
 ```
 <p>
@@ -173,7 +186,7 @@ Dalam elemen figure, kita dapat menuliskan elemen `<figcaption>` sebagai sebuah 
 </p>
 ```
 
-Contoh lainnya, elemen figure dapat digunakan untuk me-markup sebuah konten puisi.
+Contoh lainnya, elemen figure dapat digunakan untuk me-*markup* sebuah konten puisi.
 
 <figure>
   <pre>
@@ -192,7 +205,7 @@ Contoh lainnya, elemen figure dapat digunakan untuk me-markup sebuah konten puis
       Hidup dari hidupku, pintu terbuka
       Selama matamu bagiku menengadah
       Selama kau darah mengalir dari luka
-      Antara kita Mati datang tidak membelah...
+      Antara kita Mati datang tidak membelah
 
   </pre>
   <figcaption>Sajak Putih oleh Charil Anwar</figcaption>
