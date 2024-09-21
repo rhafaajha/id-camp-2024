@@ -225,3 +225,94 @@ Contoh lainnya, elemen figure dapat digunakan untuk me-_markup_ sebuah konten pu
   <figcaption>Sajak Putih oleh Charil Anwar</figcaption>
 </figure>
 ```
+
+### Anchor
+
+Anchor (jangkar) merupakan elemen yang digunakan untuk membuat sebuah hyperlink ke halaman atau website lain, file, alamat email, atau URL lainnya. Untuk menggunakan elemen ini kita gunakan `<a>` sebagai tag pembuka dan `</a>` sebagai tag penutup. Selain itu, ada atribut wajib agar elemen ini berfungsi dengan baik, yaitu `href` untuk menetapkan sebuah target yang dituju.
+
+Contoh:
+
+---
+
+<p>Hubungi kami di</p>
+<ul>
+  <li><a href="https://example.com">Website</a></li>
+  <li><a href="mailto:info@example.com">Email</a></li>
+  <li><a href="tel:+62123456">Telepon</a></li>
+  <li><a href="#address">Alamat</a></li>
+</ul>
+
+---
+
+```
+<p>Hubungi kami di</p>
+<ul>
+  <li><a href="https://example.com">Website</a></li>
+  <li><a href="mailto:info@example.com">Email</a></li>
+  <li><a href="tel:+62123456">Telepon</a></li>
+  <li><a href="#address">Alamat</a></li>
+</ul>
+```
+
+Berikut adalah daftar atribut khusus yang dapat digunakan pada elemen ini.
+
+|    Atribut     |                                                     Nilai                                                     |                                            Deskripsi                                            |
+| :------------: | :-----------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
+|    download    |                                                   filename                                                    |                     Menyuruh browser untuk mengunduh pada URL yang terkait                      |
+|      href      |                                                      URL                                                      |                      Menetapkan target ketika pengguna meng-klik hyperlink                      |
+| referrerpolicy |             no-referrer, no-referrer-when-downgrade, origin, origin-when-cross-origin, unsafe-url             |                         Menetapkan referensi untuk dikirim pada target                          |
+|      rel       | alternate, author, bookmark, external, help, license, next, nofollow, noreferrer, noopener, prev, search, tag |                Menetapkan hubungan antara halaman yang ditampilkan dengan target                |
+|     target     |                                       \_blank, \_parent, \_self, \_top                                        | Menetapkan lokasi ketika membuka target contohnya pada sebuah tab, window, atau tab itu sendiri |
+|     media      |                                                  media_type                                                   |                        Menetapkan tipe media yang digunakan pada target                         |
+
+### Emphasized Text
+
+Gunakan elemen `<em>` untuk menunjukkan bagian kata yang perlu kita tekankan. Elemen ini menunjukkan _stress emphasis_ atau konten/kata yang perlu mendapatkan penekanan atau perhatian khusus.
+
+Contoh:
+
+---
+
+<p><em>Oding</em> adalah seorang pelajar</p>
+<p>Dia adalah seorang <em>pelajar</em></p>
+
+---
+
+```
+<p><em>Oding</em> adalah seorang pelajar</p>
+<p>Dia adalah seorang <em>pelajar</em></p>
+```
+
+### Important Text
+
+Gunakan elemen `<strong>` untuk menunjukkan sebuah teks yang begitu penting (strong importance), serius ataupun mendesak. Artinya, teks tersebut harus dapat perhatian lebih dari teks biasa lainnya.
+
+Contoh:
+
+---
+
+<p>Kesehatan merupakan hal yang penting, jaga pola makan yang teratur dan <strong>jangan sampai makan tengah malam!</strong></p>
+
+---
+
+```
+<p>Kesehatan merupakan hal yang penting, jaga pola makan yang teratur dan <strong>jangan sampai makan tengah malam!</strong></p>
+```
+
+### Short Quotations
+
+Gunakan elemen `<q>` untuk menandai sebuah kutipan dalam sebuah teks. Elemen ini berbeda dengan `<blockquote>`.
+
+Contoh:
+
+---
+
+<p>Sebelum pulang kerja, ia berkata kepadaku: <q>Maaf saya tidak bisa hadir dalam pertemuan nanti</q></p>
+
+---
+
+```
+<p>Sebelum pulang kerja, ia berkata kepadaku: <q>Maaf saya tidak bisa hadir dalam pertemuan nanti</q></p>
+```
+
+Elemen quotation marks memiliki atribut cite untuk menentukan sumber URL dari sebuah kutipan (jika kutipan tersebut bersumber dari sebuah situs website). Namun, tidak ada perbedaan yang terlihat secara kasat mata jika dijalankan di browser.
