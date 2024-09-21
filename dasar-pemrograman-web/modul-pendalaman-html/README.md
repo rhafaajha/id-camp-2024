@@ -256,14 +256,14 @@ Contoh:
 
 Berikut adalah daftar atribut khusus yang dapat digunakan pada elemen ini.
 
-|  **Atribut**   |                                                   **Nilai**                                                   |                                          **Deskripsi**                                          |
-| :------------: | :-----------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
-|    download    |                                                   filename                                                    |                     Menyuruh browser untuk mengunduh pada URL yang terkait                      |
-|      href      |                                                      URL                                                      |                      Menetapkan target ketika pengguna meng-klik hyperlink                      |
-| referrerpolicy |             no-referrer, no-referrer-when-downgrade, origin, origin-when-cross-origin, unsafe-url             |                         Menetapkan referensi untuk dikirim pada target                          |
-|      rel       | alternate, author, bookmark, external, help, license, next, nofollow, noreferrer, noopener, prev, search, tag |                Menetapkan hubungan antara halaman yang ditampilkan dengan target                |
-|     target     |                                       \_blank, \_parent, \_self, \_top                                        | Menetapkan lokasi ketika membuka target contohnya pada sebuah tab, window, atau tab itu sendiri |
-|     media      |                                                  media_type                                                   |                        Menetapkan tipe media yang digunakan pada target                         |
+| **Atribut**    | **Nilai**                                                                                                     | **Deskripsi**                                                                                   |
+| -------------- | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| download       | filename                                                                                                      | Menyuruh browser untuk mengunduh pada URL yang terkait                                          |
+| href           | URL                                                                                                           | Menetapkan target ketika pengguna meng-klik hyperlink                                           |
+| referrerpolicy | no-referrer, no-referrer-when-downgrade, origin, origin-when-cross-origin, unsafe-url                         | Menetapkan referensi untuk dikirim pada target                                                  |
+| rel            | alternate, author, bookmark, external, help, license, next, nofollow, noreferrer, noopener, prev, search, tag | Menetapkan hubungan antara halaman yang ditampilkan dengan target                               |
+| target         | \_blank, \_parent, \_self, \_top                                                                              | Menetapkan lokasi ketika membuka target contohnya pada sebuah tab, window, atau tab itu sendiri |
+| media          | media_type                                                                                                    | Menetapkan tipe media yang digunakan pada target                                                |
 
 ### 5. Emphasized Text
 
@@ -440,13 +440,13 @@ Sebuah header dan footer utama yang muncul pada awal dan akhir di sebuah halaman
 
 Selain itu, elemen `<header>` dan `<footer>` dapat digunakan pada sebuah elemen `<article>` atau `<section>`. Header biasanya menampung judul dan penulis, footer dapat menampung sebuah link untuk membagikan artikel pada sebuah sosial media.
 
-> Catatan bahwa elemen <header> dan <footer> tidak boleh ditulis di dalam elemen <header> dan <footer> lainnya (bertumpuk/nested).
+> Catatan bahwa elemen `<header>` dan `<footer>` tidak boleh ditulis di dalam elemen `<header>` dan `<footer>` lainnya (bertumpuk/nested).
 
 ### 2. Main
 
 Element `<main>` digunakan untuk menampung/mewadahi konten utama (dominan) dalam `<body>`. Konten main dapat terdiri dari banyak section, ataupun artikel, atau konten apa pun di dalam elemen main, selama ia termasuk konten utama yang dimiliki oleh website.
 
-> Karena elemen <main> berisi inti konten pada website, jangan gunakan elemen main lebih dari satu pada berkas HTML.
+> Karena elemen `<main>` berisi inti konten pada website, jangan gunakan elemen main lebih dari satu pada berkas HTML.
 
 ### 3. Nav
 
@@ -462,7 +462,7 @@ Elemen `<article>` bertindak sebagai container untuk independent content pada se
 
 Jika dalam sebuah halaman terdapat beberapa artikel, tiap artikel tersebut seharusnya berada pada elemen `<article>`-nya masing-masing.
 
-> Elemen <article> dapat berada pada elemen <article> lainnya (nested) selama artikel tersebut berkaitan dengan induk elemen <article> yang menampungnya.
+> Elemen `<article>` dapat berada pada elemen `<article>` lainnya (nested) selama artikel tersebut berkaitan dengan induk elemen `<article>` yang menampungnya.
 
 ### 5. Aside
 
@@ -666,23 +666,23 @@ Contoh:
 
 Elemen `<input>` merupakan elemen yang sangat sering dipakai untuk mendapatkan data dari user. Ada banyak sekali tipe-tipe input selengkapnya ada di tabel berikut.
 
-|  **Input Type**  |                                                                      **Keterangan**                                                                      |
-| :--------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|      `text`      |                                      Input teks yang berisi satu baris. Ini adalah tipe default dari input elemen.                                       |
-|     `number`     |                                                     Input teks yang hanya mengizinkan format angka.                                                      |
-|    `password`    |                                    Sama seperti input text, tetapi setiap karakter akan ditampilkan sebagai bintang.                                     |
-|     `email`      |                                        Sama seperti teks biasa, tetapi input ini dikhususkan untuk format email.                                         |
-|     `search`     |            Input untuk melakukan pencarian berdasarkan kata kunci. Input ini memiliki ikon ✕ di tepi kanan elemen untuk melakukan clear text.            |
-|      `date`      |                          Untuk mengambil data tanggal. Tipe ini akan menyediakan popup penanggalan untuk mempermudah pengisian.                          |
-|      `time`      |                            Menentukan waktu (jam) yang ingin user isi. Tipe input ini juga akan menampilkan visual dari jam.                             |
-| `datetime-local` |                                             Sama seperti tipe date, tetapi ia menambahkan data waktu (jam).                                              |
-|    `checkbox`    |                                              Di-render sebagai sebuah kotak yang dapat dicek untuk active.                                               |
-|     `radio`      | Digunakan untuk melakukan pemilihan dari sekian opsi (radio button) yang ada. Untuk melakukannya, input ini akan dikelompokkan dalam sebuah radio group. |
-|     `range`      |                                           Menentukan nilai angka berdasarkan jangkauan nilai yang ditentukan.                                            |
-|     `color`      |               User dapat menentukan warna dengan tipe ini, baik menggunakan color picker atau memasukkan format nilai warna secara manual.               |
-|      `file`      |                                        Melakukan input satu atau lebih berkas dari penyimpanan data perangkatnya.                                        |
-|     `submit`     |   Input yang di-render sebagai tombol submit. Jika tombol ini ditekan, formulir akan ter-submit dan dikirimkan ke tujuan pengiriman (atribut action).    |
-|     `hidden`     |              Biasanya, tipe ini tidak terlihat oleh user. Namun, input ini akan sangat berguna bagi developer untuk memasukkan suatu data.               |
+| **Input Type**   | **Keterangan**                                                                                                                                           |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `text`           | Input teks yang berisi satu baris. Ini adalah tipe default dari input elemen.                                                                            |
+| `number`         | Input teks yang hanya mengizinkan format angka.                                                                                                          |
+| `password`       | Sama seperti input text, tetapi setiap karakter akan ditampilkan sebagai bintang.                                                                        |
+| `email`          | Sama seperti teks biasa, tetapi input ini dikhususkan untuk format email.                                                                                |
+| `search`         | Input untuk melakukan pencarian berdasarkan kata kunci. Input ini memiliki ikon ✕ di tepi kanan elemen untuk melakukan clear text.                       |
+| `date`           | Untuk mengambil data tanggal. Tipe ini akan menyediakan popup penanggalan untuk mempermudah pengisian.                                                   |
+| `time`           | Menentukan waktu (jam) yang ingin user isi. Tipe input ini juga akan menampilkan visual dari jam.                                                        |
+| `datetime-local` | Sama seperti tipe date, tetapi ia menambahkan data waktu (jam).                                                                                          |
+| `checkbox`       | Di-render sebagai sebuah kotak yang dapat dicek untuk active.                                                                                            |
+| `radio`          | Digunakan untuk melakukan pemilihan dari sekian opsi (radio button) yang ada. Untuk melakukannya, input ini akan dikelompokkan dalam sebuah radio group. |
+| `range`          | Menentukan nilai angka berdasarkan jangkauan nilai yang ditentukan.                                                                                      |
+| `color`          | User dapat menentukan warna dengan tipe ini, baik menggunakan color picker atau memasukkan format nilai warna secara manual.                             |
+| `file`           | Melakukan input satu atau lebih berkas dari penyimpanan data perangkatnya.                                                                               |
+| `submit`         | Input yang di-render sebagai tombol submit. Jika tombol ini ditekan, formulir akan ter-submit dan dikirimkan ke tujuan pengiriman (atribut action).      |
+| `hidden`         | Biasanya, tipe ini tidak terlihat oleh user. Namun, input ini akan sangat berguna bagi developer untuk memasukkan suatu data.                            |
 
 Adapun atribut dalam elemen input adalah sebagai berikut.
 
