@@ -10,7 +10,7 @@ Type Selector menggunakan nama elemen sebagai target untuk diterapkannya rule. D
 | ---------- |
 
 ```
-| <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -31,17 +31,17 @@ Type Selector menggunakan nama elemen sebagai target untuk diterapkannya rule. D
       elemen ini ditampilkan dengan warna teks merah juga.
     </span>
   </body>
-</html> |
+</html>
 ```
 
 | style.css |
 | --------- |
 
 ```
-| /* Semua elemen span */
+/* Semua elemen span */
 span {
     color: red;
-} |
+}
 ```
 
 Hasil di atas akan membuat teks yang berada pada setiap elemen `<span>` akan berwarna merah.
