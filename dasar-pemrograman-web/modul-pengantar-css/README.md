@@ -41,7 +41,7 @@ p {
 Dalam penggunaan CSS, terdapat dua bagian pada sebuah rule. Bagian pertama adalah identitas elemen atau elemen yang akan menerapkan rule (singkatnya kita akan sebut `selector`) dan kedua adalah `deklarasi` atau instruksi yang akan diterapkan pada sebuah selector.
 
 <img 
-src="https://d17ivq9b7rppb3.cloudfront.net/original/academy/20191206154352e89d6a0d2ec386b3da42d877ce0278c1.png" 
+src="https://th.bing.com/th/id/OIP.z_bqFJT-GMJeX_POwuw7zgAAAA?rs=1&pid=ImgDetMain" 
 alt="Selector Declarator CSS" 
 width="250" 
 />
