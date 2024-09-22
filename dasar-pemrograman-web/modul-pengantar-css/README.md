@@ -43,7 +43,6 @@ Dalam penggunaan CSS, terdapat dua bagian pada sebuah rule. Bagian pertama adala
 <img 
 src="https://th.bing.com/th/id/OIP.z_bqFJT-GMJeX_POwuw7zgAAAA?rs=1&pid=ImgDetMain" 
 alt="Selector Declarator CSS" 
-width="250" 
 />
 
 # Melampirkan Styling pada Dokumen HTML
