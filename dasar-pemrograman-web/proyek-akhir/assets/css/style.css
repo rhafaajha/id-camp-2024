@@ -170,6 +170,12 @@ td {
 /* Responsiveness */
 @media screen and (max-width: 1200px) {
   body {
+    font-size: medium;
+  }
+
+  .jumbotron,
+  table td,
+  table th {
     font-size: smaller;
   }
 
@@ -180,6 +186,12 @@ td {
 
 @media screen and (max-width: 768px) {
   body {
+    font-size: medium;
+  }
+
+  .jumbotron,
+  table td,
+  table th {
     font-size: smaller;
   }
 
