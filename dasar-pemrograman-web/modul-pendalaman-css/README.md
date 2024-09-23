@@ -459,3 +459,123 @@ h1 {
 ```
 
 kita juga bisa menentukan ukuran font dengan menuliskan kata kunci secara spesifik yang tersedia pada CSS. Kata kunci tersebut: xx-small, x-small, small, medium, large, x-large, dan xx-large.
+
+### 3. Font Weight
+
+Font-weight yang digunakan untuk mengatur ketebalan dari font yang ditampilkan. Nilai dari properti ini dapat ditentukan dengan menggunakan numeric values (100 sampai 900) atau dengan menggunakan descriptive terms (normal, bold, bolder, dan lighter).
+
+### 4. Font-style
+
+Font-style digunakan untuk menentukan postur dari teks yang ditampilkan, yakni bentuknya vertikal (normal) atau miring (italic dan oblique).
+
+Italic dan oblique keduanya menampilkan teks yang miring. Perbedaannya adalah italic menerapkan tipe miring (italic font version) dari suatu font sedangkan oblique adalah font normal yang hanya dibuat miring.
+
+Properti font-style dapat diaplikasikan ke seluruh elemen yang ada di HTML dan nilainya dapat diturunkan pada elemen turunannya.
+
+### 5. Font-variant
+
+Kita yang terbiasa dengan aplikasi document editor seperti Microsoft Word tentu tahu atau sudah mencoba fitur small caps. Fitur ini dapat membuat teks menjadi kapital tetapi dituliskan secara kecil dan merapat.
+
+### 6. Shorthand
+
+Menspesifikasikan masing-masing nilai properti font akan menghasilkan banyak sekali kode repetitif. CSS memiliki properti CSS yang biasa disebut dengan shorthand properti. Ia memberikan suatu “jalan pintas” untuk menuliskan properti-properti tersebut ke dalam satu properti, yaitu font.
+
+Dengan menggunakan properti font, kita dapat menuliskan beberapa properti hanya dalam satu properti pada satu rule.
+
+```
+target {
+  `font`: style weight variant size font-family;
+}
+```
+
+## 2. Text Styling
+
+### 1. Line Height
+
+Properti line-height digunakan untuk mengatur jarak minimal dari garis dasar ke garis dasar dalam menampilkannya teks pada halaman.
+
+### 2. Text Indent
+
+Kita dapat menentukan nilai properti ini melalui perhitungan panjang dalam px, em, dan in atau bisa menggunakan nilai persentase (%). Nilai persentase dihitung berdasarkan lebar dari induk elemen. Berikut contoh penggunaannya.
+
+### 3. Text Alignment
+
+Berikut adalah nilai yang dapat digunakan pada properti text-align.
+
+| Nilai Properti      | Fungsi                                                          |
+| ------------------- | --------------------------------------------------------------- |
+| text-align: left    | Membuat perataan teks pada ujung kiri.                          |
+| text-align: right   | Membuat perataan teks pada ujung kanan.                         |
+| text-align: center  | Membuat perataan teks secara menengah.                          |
+| text-align: justify | Membuat perataan teks yang setara pada ujung kiri dan kanannya. |
+
+### 4. Text Decoration
+
+Beberapa nilai lain yang dapat kita gunakan untuk properti ini.
+
+| Nilai properti                | Fungsi                                            |
+| ----------------------------- | ------------------------------------------------- |
+| text-decoration: underline    | Memberikan garis bawah (underline) pada teks.     |
+| text-decoration: overline     | Memberikan garis atas (overline) pada teks.       |
+| text-decoration: line-through | Memberikan efek tulisan dicoret (strikethrough).  |
+| text-decoration: none         | Menghilangkan dekorasi teks yang ada pada elemen. |
+
+### 5. Text Transform
+
+Properti ini dapat berisikan nilai sebagai berikut.
+
+| Nilai Properti             | Fungsi                                              |
+| -------------------------- | --------------------------------------------------- |
+| text-transform: none       | Teks yang ditampilkan sama seperti yang dituliskan. |
+| text-transform: capitalize | Membuat huruf pertama besar pada tiap katanya.      |
+| text-transform: lowercase  | Membuat seluruh teks menggunakan huruf kecil.       |
+| Text-transform: uppercase  | Membuat seluruh teks menggunakan huruf besar.       |
+
+### 6. Word and Letter Spacing
+
+Properti selanjutnya yang bisa kita gunakan untuk memformat teks adalah letter-spacing dan word-spacing. Sebagaimana namanya, properti ini digunakan untuk mengatur spasi atau jarak pada teks.
+
+Properti letter-spacing digunakan untuk mengatur jarak antar huruf.
+Properti word-spacing digunakan untuk mengatur jarak antar kata.
+
+### 7. Text Shadow
+
+Memberikan bayangan pada teks telah menjadi hal yang umum digunakan meskipun tidak memiliki dukungan di semua browser. Pada CSS, kita dapat gunakan properti text-shadow untuk membuat bayangan pada teks (atau biasa disebut _drop shadow_).
+
+Nilai dari properti ini cukup rumit karena membutuhkan tiga buah nilai dan satu buah nilai warna sehingga membutuhkan empat nilai dalam satu properti untuk menentukan bayangannya.
+
+- Nilai pertama: menunjukkan seberapa jauh ke kiri atau kanan (horizontal) bayangan harus ditampakkan.
+- Nilai kedua: menunjukkan jarak ke atas atau ke bawah (vertical) bayangan harus ditampakkan.
+- Nilai ketiga (opsional): menentukan tingkat keburaman yang harus diterapkan pada bayangan.
+- Nilai keempat: menentukan warna yang digunakan pada bayangan.
+
+# Pewarnaan
+
+## 1. Text Color
+
+Nilai dari properti color dapat berupa predefined color name atau sebuah numeric value dengan menggunakan RGB, RGBA, Hex, HSL, ataupun HSLA.
+
+## 2. Background Color
+
+CSS memperlakukan setiap elemen HTML seperti berada pada sebuah kotak (kita akan tahu lebih tentang ini pada pembahasan box model) dan properti background-color dapat mengatur warna untuk background dari kotak tersebut.
+
+## 3. Opacity
+
+Opacity adalah seberapa besar tingkat terlihat suatu objek. Semakin besar tingkat transparansi suatu objek, semakin tak terlihat objek tersebut. Namun, semakin besar tingkat opacity suatu objek, semakin terlihat objek tersebut (solid).
+
+| Nilai               | Deskripsi                                             |
+| ------------------- | ----------------------------------------------------- |
+| 0%                  | Elemen tak akan terlihat.                             |
+| 0% < opacity < 100% | Elemen akan tembus cahaya alias masih dapat terlihat. |
+| 100%                | Elemen sepenuhnya terlihat (tak transparan).          |
+
+# Box Model
+
+Setiap elemen yang dibuat pada HTML akan menciptakan sebuah kotak untuk menampung kontennya. Layaknya bentuk kotak pada umumnya, ada beberapa nilai atau komponen padanya.
+
+- Lebar dan tinggi pada kotak (konten).
+- Ruang kosong antara konten dengan border (padding).
+- Garis tepi (border).
+- Jarak dari elemen lain (margin). 
+
+Pada CSS, kita dapat mengatur nilai-nilai tersebut. Inilah yang disebut dengan box model.
